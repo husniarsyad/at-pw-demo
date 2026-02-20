@@ -54,7 +54,7 @@ jobs:
         run: npx playwright install --with-deps ${{ matrix.browser }}
 
       - name: Run tests (${{ matrix.browser }})
-        run: npm test -- --reporter=list --reporter=json
+        run: npm test
 
       - name: Generate Allure report
         if: always()
