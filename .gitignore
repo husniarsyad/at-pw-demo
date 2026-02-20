@@ -4,3 +4,8 @@ html-report/
 screenshots/
 allure-report/
 allure-results/
+.github/
+.husky/
+.eslintrc.js
+.eslintignore
+.prettierrc
