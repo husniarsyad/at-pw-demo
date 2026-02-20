@@ -16,7 +16,7 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@playwright/test": "^1.36.0",
+    "@playwright/test": "^1.45.0",
     "allure-playwright": "^2.1.0",
     "allure-commandline": "^2.19.0",
     "rimraf": "^5.0.0",
