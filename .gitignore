@@ -1,11 +1,9 @@
+# Dependencies
 node_modules/
+
+# Test & build artifacts
 playwright-report/
 html-report/
-screenshots/
 allure-report/
 allure-results/
-.github/
-.husky/
-.eslintrc.js
-.eslintignore
-.prettierrc
+screenshots/
