@@ -1,0 +1,35 @@
+{
+  "name": "playwright-template",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "PWDEBUG=1 playwright test",
+    "allure:generate": "npx allure generate allure-results --clean -o allure-report",
+    "allure:open": "npx allure open allure-report",
+    "allure:clear": "rimraf allure-results allure-report",
+    "test:allure": "npm run allure:clear && npm test && npm run allure:generate",
+    "test:allure:open": "npm run test:allure && npm run allure:open",
+    "lint": "eslint . --ext .js",
+    "format": "prettier --write .",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.36.0",
+    "allure-playwright": "^2.1.0",
+    "allure-commandline": "^2.19.0",
+    "rimraf": "^5.0.0",
+    "eslint": "^8.45.0",
+    "prettier": "^2.8.8",
+    "eslint-config-prettier": "^8.8.0",
+    "lint-staged": "^13.1.0",
+    "husky": "^8.0.3"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  }
+}
